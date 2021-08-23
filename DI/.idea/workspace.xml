@@ -5,39 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="263bc32c-e2fd-4d63-853b-33080d3cfc0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/sample.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex1/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex1/MainEx1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex1/Setting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex2/Customer/CustomerInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex2/Customer/CustomerList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex2/Customer/PrintCustomerInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex2/InfraClasses.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex2/MainEx2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/src/main/java/Ex2/Setting2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex1/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex1/MainEx1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex1/Setting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex2/Customer/CustomerInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex2/Customer/CustomerList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex2/Customer/PrintCustomerInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex2/InfraClasses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex2/MainEx2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/classes/Ex2/Setting2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chp3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
