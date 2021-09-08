@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -34,6 +35,7 @@ public class CustomerDao {
                                 rs.getString("phoneNum"),
                                 rs.getString("email")
                         );
+                        customerInfo.setId(rs.getInt("ID"));
                         return customerInfo;
                     }
                 }, email);
@@ -55,6 +57,7 @@ public class CustomerDao {
                                 rs.getString("phoneNum"),
                                 rs.getString("email")
                         );
+                        customerInfo.setId(rs.getInt("ID"));
                         return customerInfo;
                     }
                 }
@@ -85,6 +88,7 @@ public class CustomerDao {
         customerInfo.setId(key.intValue());
     }
 
+    @Transactional
     public boolean update(BufferedReader br) throws IOException {
         System.out.println("수정하고 싶은 손님의 이메일을 입력하세요.");
         String email = br.readLine();
@@ -102,9 +106,7 @@ public class CustomerDao {
     }
 
     public int count(){
-        Integer num = jdbcTemplate.queryForObject(
-                "select count(*) from customer",
-                Integer.class);
+        Integer num = jdbcTemplate.queryForObject("select count(*) from customer", Integer.class);
         return num;
     }
 }

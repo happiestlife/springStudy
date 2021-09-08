@@ -1,7 +1,7 @@
 package Customer;
 
 public class CustomerInfo {
-    private int id;
+    private int ID;
     private String name;
     private int age;
     private String phoneNum;
@@ -14,11 +14,11 @@ public class CustomerInfo {
         this.email = email;
     }
 
-    public void setId(int id){
-        this.id = id;
+    public void setId(int ID){
+        this.ID = ID;
     }
     public int getId(){
-        return id;
+        return ID;
     }
 
     public void setName(String name){

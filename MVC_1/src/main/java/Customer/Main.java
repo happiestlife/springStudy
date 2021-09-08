@@ -1,7 +1,8 @@
 package Customer;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.transaction.annotation.Transactional;
+
+import Setting.AppSetting;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,11 +10,10 @@ import java.io.InputStreamReader;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import Setting.AppSetting;
-
 public class Main {
     private static CustomerDao customerDao;
     public static void main(String args[]) throws IOException {
+        System.out.println("build success");
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppSetting.class);
 
         customerDao = ctx.getBean(CustomerDao.class);
@@ -57,7 +57,6 @@ public class Main {
             System.out.printf("%d. %s(age : %d), %s, %s\n", ci.getId(), ci.getName(), ci.getAge(), ci.getPhoneNum(), ci.getEmail());
     }
 
-    @Transactional
     static void update(BufferedReader br) throws IOException {
         System.out.println("Update");
         if(customerDao.update(br));

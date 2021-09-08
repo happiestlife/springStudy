@@ -3,7 +3,6 @@ package Setting;
 import Customer.CustomerDao;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -21,6 +20,10 @@ public class AppSetting {
         ds.setPassword("dlgustjd1234");
         ds.setInitialSize(1);
         ds.setMaxActive(3);
+
+        ds.setTestWhileIdle(true);
+        ds.setMinEvictableIdleTimeMillis(60000*3);
+        ds.setTimeBetweenEvictionRunsMillis(10*1000);
         return ds;
     }
 
@@ -31,9 +34,8 @@ public class AppSetting {
     }
 
     @Bean
-    PlatformTransactionManager platformTransactionManager(){
-        DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager();
-        dataSourceTransactionManager.setDataSource(dataSource());
-        return dataSourceTransactionManager;
+    public PlatformTransactionManager transactionManager(){
+        System.out.println("build success");
+        return new DataSourceTransactionManager(dataSource());
     }
 }
